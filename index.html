@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="library.js" defer></script>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nomor1 -->
+  <p id="biodata"></p>
+
+  <!-- nomor2 -->
+  <ul id="nomor2">
+  </ul>
+
+  <!-- nomor3 -->
+  <input style="width: 25px;" type="number" id="a">
+  <label id="operator1"></label>
+  <input style="width: 25px;" type="number" id="b">
+  <label id="operator2"></label>
+  <input style="width: 25px;" type="number" id="c">
+  <br><br>
+  <button onclick="kali()">×</button>
+  <button onclick="bagi()">÷</button>
+  <button onclick="tambah()">+</button>
+  <button onclick="kurang()">-</button>
+  <button onclick="result()">=</button><br>
+  <button onclick="refresh()">Refresh</button>
+  <p id="kalkulasi">hasil:</p>
+
+  <!-- nomor4 -->
+  <input id="myInput" type="number" />
+  <button onclick="submitNilai()">Submit</button>
+  <h3 id="nilai"></h3>
+
+</body>
+
+</html>
